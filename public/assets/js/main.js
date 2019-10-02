@@ -22,7 +22,7 @@ function checkPrime(value, cell) {
     let request = new XMLHttpRequest();
     //get data from server
     //toDo:staticURL change for envVar
-    request.open('GET', 'https://test-an.herokuapp.com/primes/' + value, true);
+    request.open('GET', 'https://test-interview-an.herokuapp.com/primes/' + value, true);
     //working with data
     request.onload = function () {
         let data = JSON.parse(this.response);
