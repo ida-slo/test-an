@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body, * {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*optional center positioning*/
+.main-content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*optional title*/
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/*table styling optional sizing*/
+table {
+    border-collapse: collapse;
+    width: 40vw;
+    height: 25vh;
+}
+
+tr {
+    border: 1px solid #8EA9DB;
+    height: 40px;
+}
+
+th {
+    background: #4472C4;
+    color: #ffffff;
+    text-align: center;
+}
+
+td {
+    text-align: right;
+    width: 12.5%;
+}
+
+td:first-child, td:last-child {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background: #D9E1F2;
+}
+
+.prime {
+    color: #C10707;
+    font-weight: bold;
+}
+
+/* button styling */
+.recalculateBtn {
+    background-color: #ED7D31;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 10px 20px;
+    outline: none !important; /*overwriting blue browser default html outline*/
+}
